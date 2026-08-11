@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jenny's Minnesota Favorites - Project Documentation</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f7f7f7;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #35663f;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+            border-bottom: 5px solid #d8b55b;
+        }
+
+        header h1 {
+            font-family: Georgia, serif;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            margin-top: 5px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: white;
+            margin-bottom: 25px;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 6px solid #5592b2;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.10);
+        }
+
+        h2 {
+            font-family: Georgia, serif;
+            color: #35663f;
+            border-bottom: 2px solid #d8b55b;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #35663f;
+            margin-top: 22px;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        .site-map {
+            background-color: #edf5ef;
+            padding: 20px;
+            border-radius: 6px;
+        }
+
+        .button-info {
+            margin-bottom: 18px;
+            padding: 12px;
+            background-color: #f4f8fa;
+            border-left: 4px solid #5592b2;
+        }
+
+        .button-info strong {
+            color: #35663f;
+        }
+
+        a {
+            color: #285f7a;
+            font-weight: bold;
+        }
+
+        .site-button {
+            display: inline-block;
+            background-color: #35663f;
+            color: white;
+            padding: 12px 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #35663f;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+            border-top: 4px solid #d8b55b;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                padding: 0 10px;
+            }
+
+            section {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Jenny's Minnesota Favorites</h1>
+    <p>Final Course Project Documentation</p>
+</header>
+
+<main>
+
+    <section>
+        <h2>Website Summary</h2>
+
+        <p>
+            Jenny's Minnesota Favorites is a mobile-friendly website application
+            designed to highlight some of my favorite places and outdoor activities
+            in Minnesota. The site focuses on lakes, trails, peaceful places, and
+            outdoor recreation while allowing users to explore destinations, plan
+            a visit, and create a personalized list of favorites.
+        </p>
+
+        <p>
+            The application was developed throughout Modules 1–6 of the Mobile
+            Application Development course. It incorporates HTML, CSS, JavaScript,
+            jQuery Mobile, responsive design, forms, lists, panels, grids,
+            Web Storage, and a custom ThemeRoller theme.
+        </p>
+    </section>
+
+
+    <section>
+        <h2>Website Structure / Site Map</h2>
+
+        <div class="site-map">
+            <strong>Home - index.html</strong>
+
+            <ul>
+                <li>Favorite Places - places.html</li>
+                <li>Outdoor Activities - activities.html</li>
+                <li>Plan a Visit - planner.html</li>
+                <li>My Favorites - favorites.html</li>
+            </ul>
+        </div>
+
+        <p>
+            The major pages provide navigation that allows users to move
+            throughout the application.
+        </p>
+    </section>
+
+
+    <section>
+        <h2>Home Page - index.html</h2>
+
+        <p>
+            The Home page introduces Jenny's Minnesota Favorites and provides
+            the main navigation for the application. It also displays the
+            Minnesota-inspired custom ThemeRoller design.
+        </p>
+
+        <h3>Buttons and User Actions</h3>
+
+        <div class="button-info">
+            <strong>Menu</strong><br>
+            <strong>Action:</strong> The user selects the Menu button.<br>
+            <strong>Result:</strong> The navigation panel opens and provides
+            additional navigation options.
+        </div>
+
+        <div class="button-info">
+            <strong>Home</strong><br>
+            <strong>Action:</strong> The user selects Home.<br>
+            <strong>Result:</strong> The user is returned to the main Home page.
+        </div>
+
+        <div class="button-info">
+            <strong>Favorite Places</strong><br>
+            <strong>Action:</strong> The user selects Favorite Places.<br>
+            <strong>Result:</strong> The Favorite Places page opens.
+        </div>
+
+        <div class="button-info">
+            <strong>Outdoor Activities</strong><br>
+            <strong>Action:</strong> The user selects Outdoor Activities.<br>
+            <strong>Result:</strong> The Outdoor Activities page opens.
+        </div>
+
+        <div class="button-info">
+            <strong>Plan a Visit</strong><br>
+            <strong>Action:</strong> The user selects Plan a Visit.<br>
+            <strong>Result:</strong> The trip-planning page opens so the user
+            can enter information about a planned Minnesota visit.
+        </div>
+
+        <div class="button-info">
+            <strong>My Favorites</strong><br>
+            <strong>Action:</strong> The user selects My Favorites.<br>
+            <strong>Result:</strong> The saved favorites page opens.
+        </div>
+
+        <div class="button-info">
+            <strong>View Places</strong><br>
+            <strong>Action:</strong> The user selects View Places.<br>
+            <strong>Result:</strong> The Favorite Places page opens.
+        </div>
+
+        <div class="button-info">
+            <strong>View Activities</strong><br>
+            <strong>Action:</strong> The user selects View Activities.<br>
+            <strong>Result:</strong> The Outdoor Activities page opens.
+        </div>
+
+        <div class="button-info">
+            <strong>Manage Favorites / Create My Favorites List</strong><br>
+            <strong>Action:</strong> The user selects the favorites option.<br>
+            <strong>Result:</strong> The My Favorites page opens so favorite
+            items can be entered and stored.
+        </div>
+    </section>
+
+
+    <section>
+        <h2>Favorite Places Page - places.html</h2>
+
+        <p>
+            The Favorite Places page provides information about selected
+            Minnesota destinations and allows users to browse the places
+            included in the application.
+        </p>
+
+        <h3>Buttons and User Actions</h3>
+
+        <div class="button-info">
+            <strong>Navigation Buttons</strong><br>
+            <strong>Action:</strong> The user selects one of the navigation options.<br>
+            <strong>Result:</strong> The corresponding application page opens.
+        </div>
+
+        <div class="button-info">
+            <strong>Back</strong><br>
+            <strong>Action:</strong> The user selects the Back button when available.<br>
+            <strong>Result:</strong> The application returns the user to the previous page.
+        </div>
+
+        <div class="button-info">
+            <strong>Filtered List</strong><br>
+            <strong>Action:</strong> The user enters text into the filter field.<br>
+            <strong>Result:</strong> The displayed list is narrowed to matching items.
+        </div>
+    </section>
+
+
+    <section>
+        <h2>Outdoor Activities Page - activities.html</h2>
+
+        <p>
+            The Outdoor Activities page highlights outdoor recreation and
+            activities that can be enjoyed in Minnesota.
+        </p>
+
+        <h3>Buttons and User Actions</h3>
+
+        <div class="button-info">
+            <strong>Navigation Buttons</strong><br>
+            <strong>Action:</strong> The user selects a navigation option.<br>
+            <strong>Result:</strong> The corresponding page opens.
+        </div>
+
+        <div class="button-info">
+            <strong>Back</strong><br>
+            <strong>Action:</strong> The user selects the Back button when available.<br>
+            <strong>Result:</strong> The user returns to the previous page.
+        </div>
+
+        <div class="button-info">
+            <strong>Filtered List</strong><br>
+            <strong>Action:</strong> The user types into the filter field.<br>
+            <strong>Result:</strong> The activity list displays matching items.
+        </div>
+    </section>
+
+
+    <section>
+        <h2>Plan a Visit Page - planner.html</h2>
+
+        <p>
+            The Plan a Visit page contains a form that allows users to enter
+            information for a planned Minnesota trip.
+        </p>
+
+        <h3>Buttons and User Actions</h3>
+
+        <div class="button-info">
+            <strong>Form Fields</strong><br>
+            <strong>Action:</strong> The user enters the requested trip information.<br>
+            <strong>Result:</strong> The information is prepared to be saved using
+            the application's Web Storage functionality.
+        </div>
+
+        <div class="button-info">
+            <strong>Save Plan</strong><br>
+            <strong>Action:</strong> The user completes the form and selects the
+            save or submit option.<br>
+            <strong>Result:</strong> The visit information is saved in the browser
+            using Web Storage.
+        </div>
+
+        <div class="button-info">
+            <strong>Navigation / Back</strong><br>
+            <strong>Action:</strong> The user selects a navigation or Back button.<br>
+            <strong>Result:</strong> The appropriate application page opens.
+        </div>
+    </section>
+
+
+    <section>
+        <h2>My Favorites Page - favorites.html</h2>
+
+        <p>
+            The My Favorites page allows users to create and maintain a
+            personalized list of Minnesota favorites.
+        </p>
+
+        <h3>Buttons and User Actions</h3>
+
+        <div class="button-info">
+            <strong>Add to Favorites</strong><br>
+            <strong>Action:</strong> The user enters a favorite item and selects
+            the button to add it.<br>
+            <strong>Result:</strong> The item is stored using Web Storage and
+            displayed in the favorites list.
+        </div>
+
+        <div class="button-info">
+            <strong>Remove / Clear Favorites</strong><br>
+            <strong>Action:</strong> The user selects the available option to
+            remove or clear saved favorites.<br>
+            <strong>Result:</strong> The selected stored favorite information
+            is removed from the browser.
+        </div>
+
+        <div class="button-info">
+            <strong>Navigation / Back</strong><br>
+            <strong>Action:</strong> The user selects a navigation or Back option.<br>
+            <strong>Result:</strong> The corresponding application page opens.
+        </div>
+    </section>
+
+
+    <section>
+        <h2>Technologies and Features</h2>
+
+        <ul>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>jQuery Mobile</li>
+            <li>ThemeRoller custom theme</li>
+            <li>Responsive mobile design</li>
+            <li>Navigation panel</li>
+            <li>Multi-column grid</li>
+            <li>Ordered and unordered lists</li>
+            <li>Filterable lists</li>
+            <li>Forms</li>
+            <li>Web Storage</li>
+            <li>Multiple jQuery Mobile theme swatches</li>
+        </ul>
+    </section>
+
+
+    <section>
+        <h2>Sample / Production Website</h2>
+
+        <p>
+            The final production version of Jenny's Minnesota Favorites is
+            hosted on Rasmussen SOTD.
+        </p>
+
+        <a class="site-button"
+           href="http://sotd.us/jenniferovervold/minnesotafavorites/module06/index.html"
+           target="_blank">
+            View Final Rasmussen SOTD Website
+        </a>
+
+        <p>
+            <strong>Production URL:</strong><br>
+            http://sotd.us/jenniferovervold/minnesotafavorites/module06/index.html
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <p>Jenny's Minnesota Favorites | Mobile Application Development Final Project</p>
+</footer>
+
+</body>
+</html>
