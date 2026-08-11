@@ -10,10 +10,10 @@
     <title>Jenny's Minnesota Favorites</title>
 
     <!--
-        MODULE 05 CUSTOM THEMEROLLER THEME
+        FINAL COURSE PROJECT THEMEROLLER THEME
 
-        The custom ThemeRoller file contains all three required
-        swatches: A, B, and C.
+        The custom ThemeRoller file contains all three swatches:
+        A, B, and C.
     -->
     <link rel="stylesheet"
           href="themes/minnesotafavoritestheme.min.css">
@@ -22,17 +22,11 @@
     <link rel="stylesheet"
           href="themes/jquery.mobile.icons.min.css">
 
-    <!--
-        jQuery Mobile Structure CSS
-
-        The structure-only stylesheet is used instead of the
-        standard jQuery Mobile theme so the custom ThemeRoller
-        colors are not overwritten.
-    -->
+    <!-- jQuery Mobile Structure CSS -->
     <link rel="stylesheet"
           href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css">
 
-    <!-- Custom layout and responsive styles -->
+    <!-- Custom responsive layout styles -->
     <link rel="stylesheet"
           href="css/styles.css">
 
@@ -46,18 +40,17 @@
 <body>
 
     <!--
-        MODULE 05 HOME PAGE
+        FINAL HOME PAGE
 
-        Swatch A is the primary site theme.
+        ThemeRoller Swatch A is used as the primary site theme.
     -->
     <div data-role="page"
          id="home-page"
          data-theme="a">
 
         <!--
-            THEMEROLLER SWATCH B
-
-            Swatch B is used for the slide-out navigation panel.
+            Slide-out navigation panel.
+            ThemeRoller Swatch B is used for the panel.
         -->
         <div data-role="panel"
              id="home-panel"
@@ -111,10 +104,7 @@
 
         </div>
 
-        <!--
-            THEMEROLLER SWATCH A
-            Main Header
-        -->
+        <!-- Main Header -->
         <div data-role="header"
              class="site-header"
              data-theme="a">
@@ -191,42 +181,43 @@
 
         </section>
 
+        <!-- Main Home Page Content -->
         <div role="main"
              class="ui-content main-content">
 
             <section class="content-box">
 
-                <h2>Module 5 Custom Theme</h2>
+                <h2>Discover Minnesota Favorites</h2>
 
                 <p>
-                    Jenny's Minnesota Favorites continues to grow from
-                    the website created in previous course modules.
-                    Module 5 introduces a custom jQuery Mobile theme
-                    created with ThemeRoller.
+                    Jenny's Minnesota Favorites highlights peaceful
+                    destinations and outdoor activities throughout
+                    Minnesota. Visitors can explore favorite places,
+                    search outdoor activities, plan a future visit,
+                    and create a personal list of favorites.
                 </p>
 
                 <p>
-                    The custom Minnesota-inspired theme includes all
-                    three required swatches. Swatch A uses forest green
-                    and cream, Swatch B uses lake blue and light
-                    blue-green, and Swatch C uses gold and cream.
+                    Use the navigation menu or the sections below to
+                    explore lakes, parks, trails, waterfalls, outdoor
+                    activities, and trip-planning features.
                 </p>
 
             </section>
 
             <h2 class="section-heading">
-                Explore the Three Theme Swatches
+                Explore Minnesota Favorites
             </h2>
 
             <!--
-                THREE-COLUMN GRID
+                Three-column jQuery Mobile grid.
 
-                Each card demonstrates one ThemeRoller swatch so
-                all three custom swatches are clearly visible.
+                The three columns continue to demonstrate the custom
+                ThemeRoller A, B, and C swatches created for the site.
             -->
             <div class="ui-grid-b favorites-grid">
 
-                <!-- SWATCH A -->
+                <!-- Column 1 / Swatch A -->
                 <div class="ui-block-a">
 
                     <section class="grid-card ui-body ui-body-a">
@@ -236,8 +227,8 @@
                         <h3>Favorite Places</h3>
 
                         <p>
-                            Swatch A represents Minnesota forests
-                            with forest green and cream colors.
+                            Search favorite lakes, parks, waterfalls,
+                            trails, and scenic Minnesota destinations.
                         </p>
 
                         <a href="places.html"
@@ -251,7 +242,7 @@
 
                 </div>
 
-                <!-- SWATCH B -->
+                <!-- Column 2 / Swatch B -->
                 <div class="ui-block-b">
 
                     <section class="grid-card ui-body ui-body-b">
@@ -261,8 +252,9 @@
                         <h3>Outdoor Activities</h3>
 
                         <p>
-                            Swatch B represents Minnesota lakes
-                            with lake blue and light blue-green.
+                            Explore hiking, paddleboarding,
+                            photography, fishing, campfires,
+                            and other outdoor activities.
                         </p>
 
                         <a href="activities.html"
@@ -276,7 +268,7 @@
 
                 </div>
 
-                <!-- SWATCH C -->
+                <!-- Column 3 / Swatch C -->
                 <div class="ui-block-c">
 
                     <section class="grid-card ui-body ui-body-c">
@@ -286,8 +278,8 @@
                         <h3>My Favorites</h3>
 
                         <p>
-                            Swatch C uses warm Minnesota gold and
-                            cream for forms and saved favorites.
+                            Create and save a personal list of favorite
+                            Minnesota places and outdoor activities.
                         </p>
 
                         <a href="favorites.html"
@@ -305,14 +297,22 @@
 
             <section class="content-box">
 
-                <h2>ThemeRoller and Existing Features</h2>
+                <h2>Plan and Save Your Minnesota Adventures</h2>
 
                 <p>
-                    The ThemeRoller design was added without removing
-                    the navigation panel, three-column grid, filtered
-                    lists, forms, responsive design, or Web Storage
-                    functionality developed in previous modules.
+                    Use the Plan a Visit page to save one current trip
+                    plan, or use My Favorites to build a personalized
+                    list of places and activities. Web Storage keeps
+                    saved information available in the browser after
+                    the page is refreshed.
                 </p>
+
+                <a href="planner.html"
+                   class="ui-btn ui-icon-calendar ui-btn-icon-left storage-link"
+                   data-theme="b"
+                   data-ajax="false">
+                    Plan a Visit
+                </a>
 
                 <a href="favorites.html"
                    class="ui-btn ui-icon-star ui-btn-icon-left storage-link"
@@ -325,10 +325,7 @@
 
         </div>
 
-        <!--
-            THEMEROLLER SWATCH A
-            Main Footer
-        -->
+        <!-- Main Footer -->
         <div data-role="footer"
              class="site-footer"
              data-theme="a">
