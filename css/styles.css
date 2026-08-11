@@ -1,0 +1,537 @@
+/*
+    Module 05 Course Project
+    Jenny's Minnesota Favorites
+    Jennifer Overvold
+
+    Module 05 introduces a custom jQuery Mobile ThemeRoller
+    theme containing Swatches A, B, and C.
+
+    This stylesheet now focuses mainly on layout, spacing,
+    responsive behavior, and site-specific design elements.
+    ThemeRoller controls the colors of jQuery Mobile components.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+.ui-page {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* -----------------------------------
+   Header and Logo
+----------------------------------- */
+
+.site-header {
+    position: relative;
+    padding: 24px 20px;
+    text-align: center;
+    border-bottom: 5px solid #d6b25e;
+}
+
+.site-header .ui-title {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, serif;
+    font-size: 34px;
+    white-space: normal;
+    text-shadow: none;
+}
+
+.secondary-header .ui-title {
+    padding-right: 90px;
+    padding-left: 75px;
+}
+
+/*
+    Back and Menu buttons retain their compact positioning,
+    while ThemeRoller controls their theme colors.
+*/
+.site-header .small-back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: auto;
+    min-width: 0;
+    margin: 0;
+    padding: 6px 9px 6px 28px;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 1.2;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+.site-header .panel-button {
+    width: auto;
+    min-width: 0;
+    margin: 0;
+    padding: 6px 9px 6px 28px;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 1.2;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+/* Site logo remains part of the custom Minnesota branding */
+.logo {
+    width: 105px;
+    height: 105px;
+    margin: 0 auto 14px;
+    background-color: #fff8e7;
+    color: #355e3b;
+    border: 5px solid #d6b25e;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    line-height: 1.15;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.logo-large {
+    font-size: 27px;
+}
+
+.logo-small {
+    font-size: 13px;
+}
+
+.site-subtitle {
+    margin: 7px 0 0;
+    font-size: 17px;
+    font-weight: normal;
+    text-shadow: none;
+}
+
+/* -----------------------------------
+   ThemeRoller Panel
+----------------------------------- */
+
+.ui-panel h2 {
+    font-family: Georgia, serif;
+    text-align: center;
+    text-shadow: none;
+}
+
+/* -----------------------------------
+   Main Navigation
+----------------------------------- */
+
+/*
+    The blue navigation bar is retained from the original
+    Minnesota Favorites mockup. Buttons remain dark enough
+    to contrast with the lake-blue navigation background.
+*/
+.main-navigation {
+    padding: 13px 10px;
+    background-color: #4f86a6;
+    text-align: center;
+    border-bottom: 3px solid #355e3b;
+}
+
+.main-navigation a {
+    display: inline-block;
+    margin: 5px 7px;
+    padding: 9px 14px;
+    background-color: #23452b;
+    color: #ffffff;
+    border: 1px solid #d6b25e;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+    background-color: #355e3b;
+    color: #ffffff;
+}
+
+.main-navigation a.active {
+    background-color: #fff8e7;
+    color: #355e3b;
+}
+
+/* -----------------------------------
+   Banner
+----------------------------------- */
+
+.banner {
+    min-height: 225px;
+    padding: 40px 20px;
+    background-color: #dce8e0;
+    border-bottom: 4px solid #4f86a6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner-content {
+    max-width: 760px;
+}
+
+.banner h2 {
+    margin: 0 0 12px;
+    color: #355e3b;
+    font-family: Georgia, serif;
+    font-size: 32px;
+    text-shadow: none;
+}
+
+.banner p {
+    margin: 0;
+    color: #333333;
+    font-size: 18px;
+    text-shadow: none;
+}
+
+/* -----------------------------------
+   Main Content
+----------------------------------- */
+
+.main-content.ui-content {
+    width: 92%;
+    max-width: 1050px;
+    margin: 30px auto;
+    padding: 0;
+}
+
+.content-box {
+    margin-bottom: 26px;
+    padding: 25px;
+    border-radius: 9px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.08);
+}
+
+.content-box:not(.ui-body) {
+    background-color: #ffffff;
+    border: 1px solid #c9c9c9;
+    border-left: 7px solid #4f86a6;
+}
+
+.content-box h2,
+.content-box h3 {
+    margin-top: 0;
+    font-family: Georgia, serif;
+    text-shadow: none;
+}
+
+.content-box:not(.ui-body) h2,
+.content-box:not(.ui-body) h3 {
+    color: #355e3b;
+}
+
+.content-box:not(.ui-body) p {
+    color: #333333;
+}
+
+.section-heading {
+    margin: 34px 0 20px;
+    color: #355e3b;
+    font-family: Georgia, serif;
+    font-size: 29px;
+    text-align: center;
+    text-shadow: none;
+}
+
+/* -----------------------------------
+   Existing Feature Button Grid
+----------------------------------- */
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 32px;
+}
+
+.button-grid .feature-button.ui-btn {
+    min-height: 110px;
+    margin: 0;
+    padding: 18px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+.button-symbol {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 27px;
+}
+
+/* -----------------------------------
+   Three-Column Swatch Demonstration Grid
+----------------------------------- */
+
+/*
+    The existing Module 4 three-column grid is retained.
+
+    In Module 5:
+    Column A uses ThemeRoller Swatch A.
+    Column B uses ThemeRoller Swatch B.
+    Column C uses ThemeRoller Swatch C.
+*/
+.favorites-grid {
+    margin-bottom: 32px;
+}
+
+.favorites-grid > div {
+    padding: 8px;
+}
+
+.grid-card {
+    min-height: 330px;
+    padding: 22px;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
+}
+
+.grid-card h3 {
+    font-family: Georgia, serif;
+    text-shadow: none;
+}
+
+.grid-card p {
+    text-shadow: none;
+}
+
+.grid-symbol {
+    display: block;
+    font-size: 46px;
+}
+
+.grid-card .grid-button.ui-btn {
+    width: 100%;
+    margin: 12px 0 0;
+}
+
+.storage-link.ui-btn {
+    max-width: 360px;
+    margin: 20px auto 0;
+}
+
+/* -----------------------------------
+   Filtered Lists and Favorites Lists
+----------------------------------- */
+
+.favorite-list {
+    margin-top: 20px;
+}
+
+.favorite-list.ui-listview {
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.08);
+}
+
+.favorite-list h2,
+.favorite-list h3 {
+    font-family: Georgia, serif;
+    white-space: normal;
+    text-shadow: none;
+}
+
+.favorite-list p {
+    white-space: normal;
+    text-shadow: none;
+}
+
+.favorite-item-content {
+    padding-right: 80px;
+}
+
+/* -----------------------------------
+   Forms
+----------------------------------- */
+
+.form-note {
+    padding: 14px;
+    background-color: #dce8e0;
+    color: #333333;
+    border-left: 6px solid #4f86a6;
+    border-radius: 6px;
+    text-shadow: none;
+}
+
+.form-section label,
+.form-section legend {
+    font-weight: bold;
+    text-shadow: none;
+}
+
+.form-section .ui-input-text,
+.form-section .ui-select,
+.form-section textarea {
+    margin-bottom: 18px;
+}
+
+.form-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-top: 24px;
+}
+
+.clear-button.ui-btn {
+    margin-top: 22px;
+}
+
+/* -----------------------------------
+   Web Storage Results
+----------------------------------- */
+
+.saved-information {
+    margin-top: 28px;
+    padding: 22px;
+    border-radius: 8px;
+}
+
+.saved-information h3 {
+    margin-top: 0;
+    font-family: Georgia, serif;
+    text-shadow: none;
+}
+
+.saved-information p {
+    margin: 7px 0;
+    text-shadow: none;
+}
+
+.storage-message {
+    margin-top: 18px;
+    padding: 12px;
+    color: #355e3b;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: none;
+}
+
+/* -----------------------------------
+   Footer
+----------------------------------- */
+
+.site-footer {
+    padding: 23px 20px;
+    text-align: center;
+    border-top: 5px solid #d6b25e;
+}
+
+.site-footer p {
+    margin: 7px 0;
+    text-shadow: none;
+}
+
+.site-footer a {
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+.site-footer a:hover,
+.site-footer a:focus {
+    text-decoration: underline;
+}
+
+/* -----------------------------------
+   Tablet Layout
+----------------------------------- */
+
+@media screen and (max-width: 850px) {
+
+    .button-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*
+        The required three-column grid stacks vertically
+        on smaller screens for mobile responsiveness.
+    */
+    .favorites-grid .ui-block-a,
+    .favorites-grid .ui-block-b,
+    .favorites-grid .ui-block-c {
+        width: 100%;
+        float: none;
+    }
+
+    .grid-card {
+        min-height: 0;
+    }
+}
+
+/* -----------------------------------
+   Mobile Phone Layout
+----------------------------------- */
+
+@media screen and (max-width: 650px) {
+
+    .site-header .ui-title {
+        font-size: 25px;
+    }
+
+    .secondary-header .ui-title {
+        padding-right: 60px;
+        padding-left: 55px;
+    }
+
+    .site-header .small-back-button,
+    .site-header .panel-button {
+        top: 8px;
+        padding: 5px 7px 5px 25px;
+        font-size: 11px;
+    }
+
+    .main-navigation a {
+        display: block;
+        max-width: 270px;
+        margin: 8px auto;
+    }
+
+    .banner {
+        min-height: 190px;
+        padding: 32px 17px;
+    }
+
+    .banner h2 {
+        font-size: 26px;
+    }
+
+    .main-content.ui-content {
+        width: 94%;
+    }
+
+    .button-grid,
+    .form-buttons {
+        grid-template-columns: 1fr;
+    }
+
+    .content-box {
+        padding: 20px;
+    }
+}
