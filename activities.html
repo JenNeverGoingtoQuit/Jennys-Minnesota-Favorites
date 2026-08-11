@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Favorite Places | Jenny's Minnesota Favorites</title>
+
+    <!-- Module 05 ThemeRoller Theme: Swatches A, B, and C -->
+    <link rel="stylesheet"
+          href="themes/minnesotafavoritestheme.min.css">
+
+    <!-- jQuery Mobile Icons -->
+    <link rel="stylesheet"
+          href="themes/jquery.mobile.icons.min.css">
+
+    <!-- jQuery Mobile Structure -->
+    <link rel="stylesheet"
+          href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css">
+
+    <!-- Custom Layout Styles -->
+    <link rel="stylesheet"
+          href="css/styles.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!-- jQuery Mobile -->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Swatch A is the primary page theme -->
+    <div data-role="page"
+         id="places-page"
+         data-theme="a">
+
+        <!-- Page Header uses Swatch A -->
+        <div data-role="header"
+             class="site-header secondary-header"
+             data-theme="a">
+
+            <a href="javascript:history.back()"
+               class="ui-btn ui-btn-left ui-btn-inline ui-mini
+                      ui-icon-carat-l ui-btn-icon-left small-back-button"
+               data-theme="b">
+                Back
+            </a>
+
+            <h1>Favorite Places</h1>
+
+            <p class="site-subtitle">
+                Minnesota Lakes, Parks, and Trails
+            </p>
+
+        </div>
+
+        <nav class="main-navigation"
+             aria-label="Main navigation">
+
+            <a href="index.html"
+               data-ajax="false">
+                Home
+            </a>
+
+            <a class="active"
+               href="places.html"
+               data-ajax="false">
+                Favorite Places
+            </a>
+
+            <a href="activities.html"
+               data-ajax="false">
+                Outdoor Activities
+            </a>
+
+            <a href="planner.html"
+               data-ajax="false">
+                Plan a Visit
+            </a>
+
+            <a href="favorites.html"
+               data-ajax="false">
+                My Favorites
+            </a>
+
+        </nav>
+
+        <div role="main"
+             class="ui-content main-content">
+
+            <section class="content-box">
+
+                <h2>Search My Favorite Places</h2>
+
+                <p>
+                    Use the filter box below to search by a place name,
+                    destination type, or description. Pine Lake uses a
+                    standard jQuery Mobile star icon.
+                </p>
+
+                <!--
+                    THEMEROLLER SWATCH C
+
+                    The filtered list demonstrates Swatch C.
+                -->
+                <ul data-role="listview"
+                    data-filter="true"
+                    data-filter-placeholder="Search favorite places..."
+                    data-inset="true"
+                    data-theme="c"
+                    data-divider-theme="c"
+                    class="favorite-list">
+
+                    <li data-role="list-divider">
+                        Lakes and Water
+                    </li>
+
+                    <li data-icon="star">
+
+                        <a href="planner.html"
+                           data-ajax="false">
+
+                            <h2>Pine Lake</h2>
+
+                            <p>
+                                A peaceful lake for relaxing, sunsets,
+                                paddleboarding, and family time.
+                            </p>
+
+                        </a>
+
+                    </li>
+
+                    <li data-role="list-divider">
+                        State Parks
+                    </li>
+
+                    <li data-icon="location">
+
+                        <a href="planner.html"
+                           data-ajax="false">
+
+                            <h2>Banning State Park</h2>
+
+                            <p>
+                                Wooded trails, river views, historic areas,
+                                and access to Wolf Creek Falls.
+                            </p>
+
+                        </a>
+
+                    </li>
+
+                    <li data-role="list-divider">
+                        Waterfalls
+                    </li>
+
+                    <li data-icon="carat-r">
+
+                        <a href="planner.html"
+                           data-ajax="false">
+
+                            <h2>Wolf Creek Falls</h2>
+
+                            <p>
+                                A scenic waterfall reached by hiking
+                                through Banning State Park.
+                            </p>
+
+                        </a>
+
+                    </li>
+
+                    <li data-role="list-divider">
+                        Trails and Scenic Areas
+                    </li>
+
+                    <li data-icon="carat-r">
+
+                        <a href="planner.html"
+                           data-ajax="false">
+
+                            <h2>Kettle River Trails</h2>
+
+                            <p>
+                                Scenic hiking paths featuring wooded
+                                areas and river views.
+                            </p>
+
+                        </a>
+
+                    </li>
+
+                    <li data-icon="carat-r">
+
+                        <a href="planner.html"
+                           data-ajax="false">
+
+                            <h2>Minnesota Scenic Overlooks</h2>
+
+                            <p>
+                                Peaceful stops for photography, sunsets,
+                                and enjoying the landscape.
+                            </p>
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </div>
+
+        <div data-role="footer"
+             class="site-footer"
+             data-theme="a">
+
+            <p>
+                <a href="index.html"
+                   data-ajax="false">
+                    Home
+                </a>
+
+                |
+
+                <a href="activities.html"
+                   data-ajax="false">
+                    Activities
+                </a>
+
+                |
+
+                <a href="planner.html"
+                   data-ajax="false">
+                    Plan a Visit
+                </a>
+
+                |
+
+                <a href="favorites.html"
+                   data-ajax="false">
+                    My Favorites
+                </a>
+            </p>
+
+            <p>&copy; 2026 Jennifer Overvold</p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

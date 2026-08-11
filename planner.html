@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Plan a Visit | Jenny's Minnesota Favorites</title>
+
+    <!-- Module 05 ThemeRoller Theme -->
+    <link rel="stylesheet"
+          href="themes/minnesotafavoritestheme.min.css">
+
+    <!-- jQuery Mobile Icons -->
+    <link rel="stylesheet"
+          href="themes/jquery.mobile.icons.min.css">
+
+    <!-- jQuery Mobile Structure -->
+    <link rel="stylesheet"
+          href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css">
+
+    <!-- Custom Layout Styles -->
+    <link rel="stylesheet"
+          href="css/styles.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!-- jQuery Mobile -->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <!-- Existing Web Storage JavaScript -->
+    <script src="js/storage.js"></script>
+</head>
+
+<body>
+
+    <div data-role="page"
+         id="planner-page"
+         data-theme="a">
+
+        <div data-role="header"
+             class="site-header secondary-header"
+             data-theme="a">
+
+            <a href="javascript:history.back()"
+               class="ui-btn ui-btn-left ui-btn-inline ui-mini
+                      ui-icon-carat-l ui-btn-icon-left small-back-button"
+               data-theme="b">
+                Back
+            </a>
+
+            <h1>Plan a Visit</h1>
+
+            <p class="site-subtitle">
+                Save a Minnesota Adventure
+            </p>
+
+        </div>
+
+        <nav class="main-navigation"
+             aria-label="Main navigation">
+
+            <a href="index.html"
+               data-ajax="false">
+                Home
+            </a>
+
+            <a href="places.html"
+               data-ajax="false">
+                Favorite Places
+            </a>
+
+            <a href="activities.html"
+               data-ajax="false">
+                Outdoor Activities
+            </a>
+
+            <a class="active"
+               href="planner.html"
+               data-ajax="false">
+                Plan a Visit
+            </a>
+
+            <a href="favorites.html"
+               data-ajax="false">
+                My Favorites
+            </a>
+
+        </nav>
+
+        <div role="main"
+             class="ui-content main-content">
+
+            <!--
+                THEMEROLLER SWATCH C
+
+                Form controls demonstrate the third ThemeRoller swatch.
+            -->
+            <section class="content-box form-section
+                           ui-body ui-body-c">
+
+                <h2>Minnesota Trip Planning Form</h2>
+
+                <p class="form-note">
+                    Complete the form and select Save My Plan.
+                    Your information will be saved in this browser
+                    using the Web Storage localStorage feature.
+                </p>
+
+                <form id="trip-planner-form">
+
+                    <label for="visitor-name">
+                        Name:
+                    </label>
+
+                    <input type="text"
+                           name="visitorName"
+                           id="visitor-name"
+                           placeholder="Enter your name"
+                           data-theme="c"
+                           required>
+
+                    <label for="visitor-email">
+                        Email Address:
+                    </label>
+
+                    <input type="email"
+                           name="visitorEmail"
+                           id="visitor-email"
+                           placeholder="Enter your email"
+                           data-theme="c"
+                           required>
+
+                    <label for="favorite-place">
+                        Favorite Minnesota Place:
+                    </label>
+
+                    <select name="favoritePlace"
+                            id="favorite-place"
+                            data-theme="c"
+                            required>
+
+                        <option value="">
+                            Select a place
+                        </option>
+
+                        <option value="Pine Lake">
+                            Pine Lake
+                        </option>
+
+                        <option value="Banning State Park">
+                            Banning State Park
+                        </option>
+
+                        <option value="Wolf Creek Falls">
+                            Wolf Creek Falls
+                        </option>
+
+                        <option value="Another Minnesota Destination">
+                            Another Minnesota Destination
+                        </option>
+
+                    </select>
+
+                    <fieldset data-role="controlgroup"
+                              data-theme="c">
+
+                        <legend>
+                            Preferred Outdoor Activity:
+                        </legend>
+
+                        <input type="radio"
+                               name="preferredActivity"
+                               id="activity-hiking"
+                               value="Hiking"
+                               required>
+
+                        <label for="activity-hiking">
+                            Hiking
+                        </label>
+
+                        <input type="radio"
+                               name="preferredActivity"
+                               id="activity-paddleboarding"
+                               value="Paddleboarding">
+
+                        <label for="activity-paddleboarding">
+                            Paddleboarding
+                        </label>
+
+                        <input type="radio"
+                               name="preferredActivity"
+                               id="activity-campfire"
+                               value="Campfire">
+
+                        <label for="activity-campfire">
+                            Campfire
+                        </label>
+
+                    </fieldset>
+
+                    <label for="visit-date">
+                        Preferred Visit Date:
+                    </label>
+
+                    <input type="date"
+                           name="visitDate"
+                           id="visit-date"
+                           data-theme="c"
+                           required>
+
+                    <fieldset data-role="controlgroup"
+                              data-theme="c">
+
+                        <legend>
+                            What interests you?
+                        </legend>
+
+                        <input type="checkbox"
+                               name="interests"
+                               id="interest-scenery"
+                               value="Scenic Views">
+
+                        <label for="interest-scenery">
+                            Scenic Views
+                        </label>
+
+                        <input type="checkbox"
+                               name="interests"
+                               id="interest-photography"
+                               value="Photography">
+
+                        <label for="interest-photography">
+                            Photography
+                        </label>
+
+                        <input type="checkbox"
+                               name="interests"
+                               id="interest-wildlife"
+                               value="Wildlife">
+
+                        <label for="interest-wildlife">
+                            Wildlife
+                        </label>
+
+                    </fieldset>
+
+                    <label for="additional-notes">
+                        Additional Notes:
+                    </label>
+
+                    <textarea name="additionalNotes"
+                              id="additional-notes"
+                              data-theme="c"
+                              placeholder="Enter questions, ideas, or trip notes"></textarea>
+
+                    <div class="form-buttons">
+
+                        <button type="submit"
+                                class="ui-btn save-button"
+                                data-theme="c">
+                            Save My Plan
+                        </button>
+
+                        <button type="button"
+                                id="clear-storage"
+                                class="ui-btn clear-button"
+                                data-theme="b">
+                            Clear Saved Plan
+                        </button>
+
+                    </div>
+
+                </form>
+
+                <div id="storage-message"
+                     class="storage-message"
+                     aria-live="polite">
+                </div>
+
+                <section class="saved-information
+                                ui-body ui-body-c">
+
+                    <h3>Saved Trip Information</h3>
+
+                    <div id="saved-results">
+
+                        <p>
+                            No trip-planning information has been saved yet.
+                        </p>
+
+                    </div>
+
+                </section>
+
+            </section>
+
+        </div>
+
+        <div data-role="footer"
+             class="site-footer"
+             data-theme="a">
+
+            <p>
+                <a href="index.html"
+                   data-ajax="false">
+                    Home
+                </a>
+
+                |
+
+                <a href="places.html"
+                   data-ajax="false">
+                    Favorite Places
+                </a>
+
+                |
+
+                <a href="activities.html"
+                   data-ajax="false">
+                    Outdoor Activities
+                </a>
+
+                |
+
+                <a href="favorites.html"
+                   data-ajax="false">
+                    My Favorites
+                </a>
+            </p>
+
+            <p>&copy; 2026 Jennifer Overvold</p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

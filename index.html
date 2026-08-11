@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Jenny's Minnesota Favorites</title>
+
+    <!--
+        MODULE 05 CUSTOM THEMEROLLER THEME
+
+        The custom ThemeRoller file contains all three required
+        swatches: A, B, and C.
+    -->
+    <link rel="stylesheet"
+          href="themes/minnesotafavoritestheme.min.css">
+
+    <!-- jQuery Mobile Icon Library -->
+    <link rel="stylesheet"
+          href="themes/jquery.mobile.icons.min.css">
+
+    <!--
+        jQuery Mobile Structure CSS
+
+        The structure-only stylesheet is used instead of the
+        standard jQuery Mobile theme so the custom ThemeRoller
+        colors are not overwritten.
+    -->
+    <link rel="stylesheet"
+          href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css">
+
+    <!-- Custom layout and responsive styles -->
+    <link rel="stylesheet"
+          href="css/styles.css">
+
+    <!-- jQuery must load before jQuery Mobile -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!-- jQuery Mobile JavaScript -->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+    <!--
+        MODULE 05 HOME PAGE
+
+        Swatch A is the primary site theme.
+    -->
+    <div data-role="page"
+         id="home-page"
+         data-theme="a">
+
+        <!--
+            THEMEROLLER SWATCH B
+
+            Swatch B is used for the slide-out navigation panel.
+        -->
+        <div data-role="panel"
+             id="home-panel"
+             data-display="overlay"
+             data-position="left"
+             data-theme="b">
+
+            <h2>Explore the App</h2>
+
+            <a href="index.html"
+               class="ui-btn ui-icon-home ui-btn-icon-left"
+               data-theme="b"
+               data-ajax="false">
+                Home
+            </a>
+
+            <a href="places.html"
+               class="ui-btn ui-icon-location ui-btn-icon-left"
+               data-theme="b"
+               data-ajax="false">
+                Favorite Places
+            </a>
+
+            <a href="activities.html"
+               class="ui-btn ui-icon-navigation ui-btn-icon-left"
+               data-theme="b"
+               data-ajax="false">
+                Outdoor Activities
+            </a>
+
+            <a href="planner.html"
+               class="ui-btn ui-icon-calendar ui-btn-icon-left"
+               data-theme="b"
+               data-ajax="false">
+                Plan a Visit
+            </a>
+
+            <a href="favorites.html"
+               class="ui-btn ui-icon-star ui-btn-icon-left"
+               data-theme="b"
+               data-ajax="false">
+                My Favorites
+            </a>
+
+            <a href="#"
+               class="ui-btn ui-icon-delete ui-btn-icon-left"
+               data-theme="b"
+               data-rel="close">
+                Close Menu
+            </a>
+
+        </div>
+
+        <!--
+            THEMEROLLER SWATCH A
+            Main Header
+        -->
+        <div data-role="header"
+             class="site-header"
+             data-theme="a">
+
+            <a href="#home-panel"
+               class="ui-btn ui-btn-left ui-btn-inline ui-mini
+                      ui-icon-bars ui-btn-icon-left panel-button"
+               data-theme="b">
+                Menu
+            </a>
+
+            <div class="logo"
+                 aria-label="Minnesota Favorites logo">
+
+                <span class="logo-large">MN</span>
+                <span class="logo-small">Favorites</span>
+
+            </div>
+
+            <h1>Jenny's Minnesota Favorites</h1>
+
+            <p class="site-subtitle">
+                Lakes, Trails, and Peaceful Places
+            </p>
+
+        </div>
+
+        <!-- Main Website Navigation -->
+        <nav class="main-navigation"
+             aria-label="Main navigation">
+
+            <a class="active"
+               href="index.html"
+               data-ajax="false">
+                Home
+            </a>
+
+            <a href="places.html"
+               data-ajax="false">
+                Favorite Places
+            </a>
+
+            <a href="activities.html"
+               data-ajax="false">
+                Outdoor Activities
+            </a>
+
+            <a href="planner.html"
+               data-ajax="false">
+                Plan a Visit
+            </a>
+
+            <a href="favorites.html"
+               data-ajax="false">
+                My Favorites
+            </a>
+
+        </nav>
+
+        <!-- Home Page Banner -->
+        <section class="banner">
+
+            <div class="banner-content">
+
+                <h2>Welcome to My Minnesota Escapes</h2>
+
+                <p>
+                    Explore peaceful lakes, scenic trails, state parks,
+                    waterfalls, and outdoor activities that make
+                    Minnesota feel like home.
+                </p>
+
+            </div>
+
+        </section>
+
+        <div role="main"
+             class="ui-content main-content">
+
+            <section class="content-box">
+
+                <h2>Module 5 Custom Theme</h2>
+
+                <p>
+                    Jenny's Minnesota Favorites continues to grow from
+                    the website created in previous course modules.
+                    Module 5 introduces a custom jQuery Mobile theme
+                    created with ThemeRoller.
+                </p>
+
+                <p>
+                    The custom Minnesota-inspired theme includes all
+                    three required swatches. Swatch A uses forest green
+                    and cream, Swatch B uses lake blue and light
+                    blue-green, and Swatch C uses gold and cream.
+                </p>
+
+            </section>
+
+            <h2 class="section-heading">
+                Explore the Three Theme Swatches
+            </h2>
+
+            <!--
+                THREE-COLUMN GRID
+
+                Each card demonstrates one ThemeRoller swatch so
+                all three custom swatches are clearly visible.
+            -->
+            <div class="ui-grid-b favorites-grid">
+
+                <!-- SWATCH A -->
+                <div class="ui-block-a">
+
+                    <section class="grid-card ui-body ui-body-a">
+
+                        <span class="grid-symbol">🌲</span>
+
+                        <h3>Favorite Places</h3>
+
+                        <p>
+                            Swatch A represents Minnesota forests
+                            with forest green and cream colors.
+                        </p>
+
+                        <a href="places.html"
+                           class="ui-btn grid-button"
+                           data-theme="a"
+                           data-ajax="false">
+                            View Places
+                        </a>
+
+                    </section>
+
+                </div>
+
+                <!-- SWATCH B -->
+                <div class="ui-block-b">
+
+                    <section class="grid-card ui-body ui-body-b">
+
+                        <span class="grid-symbol">🌊</span>
+
+                        <h3>Outdoor Activities</h3>
+
+                        <p>
+                            Swatch B represents Minnesota lakes
+                            with lake blue and light blue-green.
+                        </p>
+
+                        <a href="activities.html"
+                           class="ui-btn grid-button"
+                           data-theme="b"
+                           data-ajax="false">
+                            View Activities
+                        </a>
+
+                    </section>
+
+                </div>
+
+                <!-- SWATCH C -->
+                <div class="ui-block-c">
+
+                    <section class="grid-card ui-body ui-body-c">
+
+                        <span class="grid-symbol">⭐</span>
+
+                        <h3>My Favorites</h3>
+
+                        <p>
+                            Swatch C uses warm Minnesota gold and
+                            cream for forms and saved favorites.
+                        </p>
+
+                        <a href="favorites.html"
+                           class="ui-btn grid-button"
+                           data-theme="c"
+                           data-ajax="false">
+                            Manage Favorites
+                        </a>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+            <section class="content-box">
+
+                <h2>ThemeRoller and Existing Features</h2>
+
+                <p>
+                    The ThemeRoller design was added without removing
+                    the navigation panel, three-column grid, filtered
+                    lists, forms, responsive design, or Web Storage
+                    functionality developed in previous modules.
+                </p>
+
+                <a href="favorites.html"
+                   class="ui-btn ui-icon-star ui-btn-icon-left storage-link"
+                   data-theme="c"
+                   data-ajax="false">
+                    Create My Favorites List
+                </a>
+
+            </section>
+
+        </div>
+
+        <!--
+            THEMEROLLER SWATCH A
+            Main Footer
+        -->
+        <div data-role="footer"
+             class="site-footer"
+             data-theme="a">
+
+            <p>
+                <strong>Jenny's Minnesota Favorites</strong>
+            </p>
+
+            <p>
+                <a href="index.html"
+                   data-ajax="false">
+                    Home
+                </a>
+
+                |
+
+                <a href="places.html"
+                   data-ajax="false">
+                    Places
+                </a>
+
+                |
+
+                <a href="activities.html"
+                   data-ajax="false">
+                    Activities
+                </a>
+
+                |
+
+                <a href="planner.html"
+                   data-ajax="false">
+                    Plan a Visit
+                </a>
+
+                |
+
+                <a href="favorites.html"
+                   data-ajax="false">
+                    My Favorites
+                </a>
+            </p>
+
+            <p>&copy; 2026 Jennifer Overvold</p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

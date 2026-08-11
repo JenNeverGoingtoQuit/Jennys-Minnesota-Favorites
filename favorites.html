@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>My Favorites | Jenny's Minnesota Favorites</title>
+
+    <!-- Module 05 ThemeRoller Theme -->
+    <link rel="stylesheet"
+          href="themes/minnesotafavoritestheme.min.css">
+
+    <!-- jQuery Mobile Icons -->
+    <link rel="stylesheet"
+          href="themes/jquery.mobile.icons.min.css">
+
+    <!-- jQuery Mobile Structure -->
+    <link rel="stylesheet"
+          href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css">
+
+    <!-- Custom Layout Styles -->
+    <link rel="stylesheet"
+          href="css/styles.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!-- jQuery Mobile -->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <!-- Existing Web Storage JavaScript -->
+    <script src="js/storage.js"></script>
+</head>
+
+<body>
+
+    <div data-role="page"
+         id="favorites-page"
+         data-theme="a">
+
+        <!-- Panel demonstrates ThemeRoller Swatch B -->
+        <div data-role="panel"
+             id="favorites-panel"
+             data-display="overlay"
+             data-position="left"
+             data-theme="b">
+
+            <h2>Explore the App</h2>
+
+            <a href="index.html"
+               class="ui-btn ui-icon-home ui-btn-icon-left"
+               data-theme="b"
+               data-ajax="false">
+                Home
+            </a>
+
+            <a href="places.html"
+               class="ui-btn ui-icon-location ui-btn-icon-left"
+               data-theme="b"
+               data-ajax="false">
+                Favorite Places
+            </a>
+
+            <a href="activities.html"
+               class="ui-btn ui-icon-navigation ui-btn-icon-left"
+               data-theme="b"
+               data-ajax="false">
+                Outdoor Activities
+            </a>
+
+            <a href="planner.html"
+               class="ui-btn ui-icon-calendar ui-btn-icon-left"
+               data-theme="b"
+               data-ajax="false">
+                Plan a Visit
+            </a>
+
+            <a href="favorites.html"
+               class="ui-btn ui-icon-star ui-btn-icon-left"
+               data-theme="b"
+               data-ajax="false">
+                My Favorites
+            </a>
+
+            <a href="#"
+               class="ui-btn ui-icon-delete ui-btn-icon-left"
+               data-theme="b"
+               data-rel="close">
+                Close Menu
+            </a>
+
+        </div>
+
+        <div data-role="header"
+             class="site-header secondary-header"
+             data-theme="a">
+
+            <a href="javascript:history.back()"
+               class="ui-btn ui-btn-left ui-btn-inline ui-mini
+                      ui-icon-carat-l ui-btn-icon-left small-back-button"
+               data-theme="b">
+                Back
+            </a>
+
+            <a href="#favorites-panel"
+               class="ui-btn ui-btn-right ui-btn-inline ui-mini
+                      ui-icon-bars ui-btn-icon-left panel-button"
+               data-theme="b">
+                Menu
+            </a>
+
+            <h1>My Favorites</h1>
+
+            <p class="site-subtitle">
+                Create and Save a Personal List
+            </p>
+
+        </div>
+
+        <nav class="main-navigation"
+             aria-label="Main navigation">
+
+            <a href="index.html"
+               data-ajax="false">
+                Home
+            </a>
+
+            <a href="places.html"
+               data-ajax="false">
+                Favorite Places
+            </a>
+
+            <a href="activities.html"
+               data-ajax="false">
+                Outdoor Activities
+            </a>
+
+            <a href="planner.html"
+               data-ajax="false">
+                Plan a Visit
+            </a>
+
+            <a class="active"
+               href="favorites.html"
+               data-ajax="false">
+                My Favorites
+            </a>
+
+        </nav>
+
+        <div role="main"
+             class="ui-content main-content">
+
+            <!-- Form uses Swatch C -->
+            <section class="content-box form-section
+                           ui-body ui-body-c">
+
+                <h2>Add a Favorite Item</h2>
+
+                <p class="form-note">
+                    Enter a favorite Minnesota place or outdoor activity.
+                    The information will be stored in your browser using
+                    Web Storage and displayed in the list below.
+                </p>
+
+                <form id="favorite-item-form">
+
+                    <label for="favorite-name">
+                        Favorite Name:
+                    </label>
+
+                    <input type="text"
+                           name="favoriteName"
+                           id="favorite-name"
+                           data-theme="c"
+                           placeholder="Example: Pine Lake"
+                           required>
+
+                    <label for="favorite-category">
+                        Favorite Category:
+                    </label>
+
+                    <select name="favoriteCategory"
+                            id="favorite-category"
+                            data-theme="c"
+                            required>
+
+                        <option value="">
+                            Select a category
+                        </option>
+
+                        <option value="Lake">
+                            Lake
+                        </option>
+
+                        <option value="State Park">
+                            State Park
+                        </option>
+
+                        <option value="Trail">
+                            Trail
+                        </option>
+
+                        <option value="Outdoor Activity">
+                            Outdoor Activity
+                        </option>
+
+                        <option value="Scenic Destination">
+                            Scenic Destination
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                    </select>
+
+                    <label for="favorite-description">
+                        Why is it a favorite?
+                    </label>
+
+                    <textarea name="favoriteDescription"
+                              id="favorite-description"
+                              data-theme="c"
+                              placeholder="Enter a short description"
+                              required></textarea>
+
+                    <button type="submit"
+                            class="ui-btn save-button
+                                   ui-icon-plus ui-btn-icon-left"
+                            data-theme="c">
+                        Add to Favorites
+                    </button>
+
+                </form>
+
+                <div id="favorite-storage-message"
+                     class="storage-message"
+                     aria-live="polite">
+                </div>
+
+            </section>
+
+            <!-- Saved Web Storage list uses Swatch C -->
+            <section class="content-box
+                           ui-body ui-body-c">
+
+                <h2>My Saved Favorites</h2>
+
+                <p>
+                    The list below is created from information saved in
+                    localStorage. Refreshing or closing the page will not
+                    remove the list from this browser.
+                </p>
+
+                <ul id="favorites-list"
+                    data-role="listview"
+                    data-inset="true"
+                    data-theme="c"
+                    data-divider-theme="c"
+                    class="favorite-list">
+
+                    <li>
+                        No favorite items have been saved yet.
+                    </li>
+
+                </ul>
+
+                <button type="button"
+                        id="clear-favorites"
+                        class="ui-btn clear-button
+                               ui-icon-delete ui-btn-icon-left"
+                        data-theme="b">
+                    Clear All Favorites
+                </button>
+
+            </section>
+
+        </div>
+
+        <div data-role="footer"
+             class="site-footer"
+             data-theme="a">
+
+            <p>
+                <a href="index.html"
+                   data-ajax="false">
+                    Home
+                </a>
+
+                |
+
+                <a href="places.html"
+                   data-ajax="false">
+                    Places
+                </a>
+
+                |
+
+                <a href="activities.html"
+                   data-ajax="false">
+                    Activities
+                </a>
+
+                |
+
+                <a href="planner.html"
+                   data-ajax="false">
+                    Plan a Visit
+                </a>
+            </p>
+
+            <p>&copy; 2026 Jennifer Overvold</p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
